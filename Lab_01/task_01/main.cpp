@@ -6,15 +6,33 @@ using namespace std;
 int main() {
     Country c;
 
-    c.setName("Ukraine");
-    c.setCapital("Kyiv");
-    c.setPopulation(37800000);
+    string name;
+    string capital;
+    int population = 0;
+
+    cout << "Enter country:" << endl;
+    cin >> name;
+    cout << "Enter capital:" << endl;
+    cin >> capital;
+    cout << "Enter population:" << endl;
+    cin >> population;
+
+    c.setName(name);
+    c.setCapital(capital);
+    c.setPopulation(population);
 
     cout << "\nCountry: " << c.getName() << endl;
     cout << "Capital: " << c.getCapital() << endl;
     cout << "Population: " << c.getPopulation() << endl;
 
-    Country a("Poland", "Warsaw", 38000000);
+    cout << "Enter country:" << endl;
+    cin >> name;
+    cout << "Enter capital:" << endl;
+    cin >> capital;
+    cout << "Enter population:" << endl;
+    cin >> population;
+
+    Country a(name, capital, population);
 
     cout << "\nCountry: " << a.getName() << endl;
     cout << "Capital: " << a.getCapital() << endl;

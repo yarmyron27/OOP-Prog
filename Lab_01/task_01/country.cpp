@@ -24,8 +24,8 @@ int Country::getPopulation() {
 }
 
 Country::Country() {
-    name = "nul";
-    capital = "nul";
+    name = "";
+    capital = "";
     population = 0;
     cout << "constructor called" << endl;
 }

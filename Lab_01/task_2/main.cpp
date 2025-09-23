@@ -9,42 +9,25 @@ struct Country {
     int population;
 };
 
-void setName(Country &c, string newName) {
-    c.name = newName;
-}
-void setCapital(Country &c, string newCapital) {
-    c.capital = newCapital;
-}
-void setPopulation(Country &c, int newPopulation) {
-    c.population = newPopulation;
-}
-
-string getName(Country c) {
-    return c.name;
-}
-string getCapital(Country c) {
-    return c.capital;
-}
-int getPopulation(Country c) {
-    return c.population;
-}
-
 int main() {
     Country c;
 
-    setName(c, "Ukraine");
-    setCapital(c, "Kyiv");
-    setPopulation(c, 37800000);
+    cout << "Enter country:" << endl;
+    cin >> c.name;
+    cout << "Enter capital:" << endl;
+    cin >> c.capital;
+    cout << "Enter population:" << endl;
+    cin >> c.population;
 
-    cout << "\nCountry: " << getName(c) << endl;
-    cout << "Capital: " << getCapital(c) << endl;
-    cout << "Population: " << getPopulation(c) << endl;
+    cout << "\nCountry: " << c.name << endl;
+    cout << "Capital: " << c.capital << endl;
+    cout << "Population: " << c.population << endl;
 
-    Country a = {"Poland", "Warsaw", 38000000};
+    Country a = {c.name, c.capital, c.population};
 
-    cout << "\nCountry: " << getName(a) << endl;
-    cout << "Capital: " << getCapital(a) << endl;
-    cout << "Population: " << getPopulation(a) << endl;
+    cout << "\nCountry: " << c.name << endl;
+    cout << "Capital: " << c.capital << endl;
+    cout << "Population: " << c.population << endl;
 
     return 0;
 }
