@@ -14,14 +14,20 @@ private:
     string model;
 
 public:
+    Auto(string mark = "", string model = "",
+        Engine engine = Engine(), Cabin cabin = Cabin());
+
     void setMark(string NewMark);
     void setModel(string NewModel);
+    void setEngine(Engine eng);
+    void setCabin(Cabin cab);
+
     string getMark();
     string getModel();
+    Engine getEngine();
+    Cabin getCabin();
 
     void auto_inf();
-
-    Auto(string mark = "", string model = "", Engine engine = Engine(), Cabin cabin = Cabin());
 };
 
 #endif // AUTO_H

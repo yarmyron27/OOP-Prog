@@ -7,9 +7,11 @@ SOURCES += \
         auto.cpp \
         cabin.cpp \
         engine.cpp \
-        main.cpp
+        main.cpp \
+        supercar.cpp
 
 HEADERS += \
     auto.h \
     cabin.h \
-    engine.h
+    engine.h \
+    supercar.h

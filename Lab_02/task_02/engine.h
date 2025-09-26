@@ -11,7 +11,8 @@ private:
     float fuel;
 
 public:
-    void start();
+    Engine(string type_eng = "", float capacity = 0.0, float strenght = 0.0, float fuel = 0.0);
+    ~Engine();
 
     void setType_eng(string NewType_eng);
     void setCapacity(float NewCapacity);
@@ -23,8 +24,7 @@ public:
     float getStrenght();
     float getFuel();
 
-    Engine(string type_eng = "", float capacity = 0.0, float strenght = 0.0, float fuel = 0.0);
-    ~Engine();
+    void HasFuel(float fuel);
 };
 
 #endif // ENGINE_H

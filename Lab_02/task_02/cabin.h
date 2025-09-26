@@ -8,15 +8,15 @@ private:
     string mat_cabin;
 
 public:
-    char passenger;
-    char rate;
+    Cabin(short passenger = 0, short rate = 0, string mat_cabin = "");
+    ~Cabin();
+
+    short passenger;
+    short rate;
 
     void setMat_cabin(string NewMat_cabin);
 
-    string getMat_cabin();
-
-    Cabin(char passenger = 0, char rate = 0, string mat_cabin = 0);
-    ~Cabin();
+    string getMat_cabin(); 
 };
 
 #endif // CABIN_H
